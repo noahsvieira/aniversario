@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#020805">
+<title>Uma surpresa para você</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<div id="app">
+  <canvas id="matrix" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+  <main>
+    <section class="panel" id="gate">
+      <div class="kicker">✦ acesso especial detectado ✦</div>
+      <h1>Uma surpresa<br>espera por você.</h1>
+      <p class="sub">Mas antes, você precisa sair da Matrix!.<br>Digite a frase secreta para desbloquear.</p>
+      <form class="prompt" id="unlockForm">
+        <input id="secret" type="text" placeholder="Digite a frase secreta..." autocomplete="off" aria-label="Frase secreta">
+        <button type="submit">Desbloquear</button>
+      </form>
+      <div class="error" id="error" aria-live="polite"></div>
+    </section>
+    <section class="panel hidden" id="letter">
+      <div class="kicker">✦ mensagem decodificada com sucesso ✦</div>
+      <h1>Feliz aniversário,<br>minha sereia. 💚</h1>
+      <div class="message">
+        <p>Feliz aniversário pra minha sereia particular, meu cupcake favorito, minha Deusa encarnada, Tchutuca e oficialmente a luz da minha vida. Caramba, olha esses apelidos, parece até exagero, mas não é. É você.</p>
+        <p>Você é sereia porque me afogou e eu nem quis colete salva-vidas. É cupcake porque é impossível ficar só em um pedaço. É Deusa encarnada porque ninguém é capaz de explicar o seu poder e sua beleza. E é minha luz porque até quando você apaga tudo, você continua brilhando. E minha Tchutchuca é claro rs, porque tenho alguns modos da moda antiga rs.</p>
+        <p>Sério... Você é linda demais, é gostosa, é inteligente pra caramba e ainda me aguenta. Isso é milagre.</p>
+        <p>Te amo 3000 encarnações vezes o infinito. E amanhã de novo.</p>
+        <p>Obrigadão por existir e por ter dito sim pra passar a vida com essa pessoa chata aqui. Te amo, tá? Muito. Mais do que ontem. Feliz vida, meu amor.</p>
+      </div>
+      <div class="signature">Ass: Pessoa de humor questionável, genial, e com muitas ideias, assuntos aleatórios até de madrugada.</div>
+      <span class="heart" aria-hidden="true">♥</span>
+      <button id="restart" type="button">Rever a surpresa ↺</button>
+    </section>
+  </main>
+  <div id="transition" class="hidden" aria-live="polite">ACESSO LIBERADO<span>▌</span></div>
+</div>
+</body>
+</html>
